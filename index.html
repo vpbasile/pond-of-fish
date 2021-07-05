@@ -1,0 +1,27 @@
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=windows-1252">
+    <link rel="stylesheet" type="text/css" href="css/fishThemes.css">
+    <title>A pond of fish</title>
+    <style>
+        /*  */
+    </style>
+  </head>
+  <body onload="initfishCanvas();">
+    <div>
+        <h1 id="placeholder">Your pond is empty.</h1>
+        <div id="controls">
+            <input type="button" class="styledButton" id="startButton" value="Start" onclick="updateButtons(); loop();">
+            <!-- <input type="button" class="styledButton" id="changeViewButton" value="Change view" onclick=""> -->
+            <input type="button" class="styledButton" id="stopButton" value="Stop" disabled onclick="stopTheScript();">
+        </div>
+        <!-- <h2 id="currentView">Deep-sea view</h2> -->
+        
+        <div id="infoDiv" class="float-right"></div>
+        <canvas id="fishCanvas">
+            <p>Your browser doesn't support canvas. Boo hoo!</p>
+        </canvas>
+    </div>
+  </body>
+  <script src="../scripts/fish.js"></script>
+</html>

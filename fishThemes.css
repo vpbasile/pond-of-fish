@@ -1,0 +1,70 @@
+html {
+    --background-color: hsl(240, 55%, 25%);
+    --accent-color: hsl(240,30%,50%);
+    --text-primary: hsl(0, 0%, 100%);
+}
+
+@font-face {
+    src:url(../LostFish.ttf);
+    font-family: lost-fish;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-primary);
+}
+
+h1 {
+    font-family: lost-fish;
+    text-align: center;
+}
+
+h2 {
+    font-family: lost-fish;
+    text-align: center;
+    color:var(--accent-color);
+}
+
+.styledButton {
+    font-size: x-large;
+    padding: 1.5%;
+    border: 5px double var(--background-color);
+    margin: 2%;
+    background-color: var(--accent-color);
+    color:var(--text-primary);
+  }  
+
+.styledButton:disabled {
+    border-color: gray;
+    background-color: var(--background-color);
+    color:var(--text-primary);
+  }
+
+#controls {
+    text-align: center;
+}
+
+#fishCanvas {
+    border: 10px solid var(--accent-color);
+    border-radius: 50%;
+}
+
+div {
+}
+
+#infoDiv {
+    /* width:450px; */
+}
+
+#infoDiv div {
+    /* border:2px solid red; */
+    font-size-adjust: 1;
+    text-align: right;
+    border:2px double var(--accent-color);
+} 
+
+.accent1 {background-color: var(--color-accent-one);}
+.accent2 {background-color: var(--color-accent-two);}
+.accent3 {background-color: var(--color-accent-thr);}
+.float-left {float: left;}
+.float-right {float: right;}
