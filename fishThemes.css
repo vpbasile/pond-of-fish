@@ -5,7 +5,7 @@ html {
 }
 
 @font-face {
-    src:url(../LostFish.ttf);
+    src:url(LostFish.ttf);
     font-family: lost-fish;
 }
 
